@@ -62,13 +62,13 @@ dist_num_list = sorted(set(num_list))
 bingo_num_list = []
 for i in bingo_lis:bingo_num_list+=i
 
-card_printer(bingo_lis)
+# card_printer(bingo_lis)
 print()
 
 updated_bingo_num_list = ["x" if i in dist_num_list else i for i in bingo_num_list]
 updated_bingo_list = [updated_bingo_num_list[i*5:(i+1)*5] for i in range((len(updated_bingo_num_list)+4)//5)]
 # print(updated_bingo_list)
-print(updated_bingo_list)
+# print(updated_bingo_list)
 card_printer(updated_bingo_list)
 
 '''
